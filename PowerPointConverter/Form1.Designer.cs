@@ -38,7 +38,7 @@
             // 
             this.groupBox1.Controls.Add(this.Button_Convertir);
             this.groupBox1.Controls.Add(this.Button_Seleccion);
-            this.groupBox1.Location = new System.Drawing.Point(2, 60);
+            this.groupBox1.Location = new System.Drawing.Point(2, 1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(270, 198);
             this.groupBox1.TabIndex = 1;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 262);
+            this.ClientSize = new System.Drawing.Size(275, 202);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Power Point Converter";
