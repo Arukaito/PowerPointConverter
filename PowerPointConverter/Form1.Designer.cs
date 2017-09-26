@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Button_Convertir = new System.Windows.Forms.Button();
             this.Button_Seleccion = new System.Windows.Forms.Button();
+            this.ButtonExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ButtonExit);
             this.groupBox1.Controls.Add(this.Button_Convertir);
             this.groupBox1.Controls.Add(this.Button_Seleccion);
             this.groupBox1.Location = new System.Drawing.Point(2, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 198);
+            this.groupBox1.Size = new System.Drawing.Size(270, 111);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -60,17 +63,32 @@
             this.Button_Seleccion.Name = "Button_Seleccion";
             this.Button_Seleccion.Size = new System.Drawing.Size(251, 23);
             this.Button_Seleccion.TabIndex = 0;
-            this.Button_Seleccion.Text = "Seleccionar Folder";
+            this.Button_Seleccion.Text = "Seleccionar Folder Para Importar Archivos";
             this.Button_Seleccion.UseVisualStyleBackColor = true;
             this.Button_Seleccion.Click += new System.EventHandler(this.ButtonSeleccionClick);
+            // 
+            // ButtonExit
+            // 
+            this.ButtonExit.Location = new System.Drawing.Point(10, 77);
+            this.ButtonExit.Name = "ButtonExit";
+            this.ButtonExit.Size = new System.Drawing.Size(251, 23);
+            this.ButtonExit.TabIndex = 2;
+            this.ButtonExit.Text = "Salir";
+            this.ButtonExit.UseVisualStyleBackColor = true;
+            this.ButtonExit.Click += new System.EventHandler(this.ButtonExitClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 202);
+            this.ClientSize = new System.Drawing.Size(275, 115);
             this.Controls.Add(this.groupBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Power Point Converter";
             this.Load += new System.EventHandler(this.Form1Load);
             this.groupBox1.ResumeLayout(false);
@@ -82,6 +100,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Button_Convertir;
         private System.Windows.Forms.Button Button_Seleccion;
+        private System.Windows.Forms.Button ButtonExit;
     }
 }
 

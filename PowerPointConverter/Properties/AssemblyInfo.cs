@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("PowerPointConverter")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Convertidor de Power Point a Imagen")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("Alkaworks")]
 [assembly: AssemblyProduct("PowerPointConverter")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2017")]
+[assembly: AssemblyCopyright("Copyright © Alkaworks 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
