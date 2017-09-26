@@ -59,15 +59,5 @@ namespace PowerPointConverter.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MSSL_USA_Logo_Long_Form_NEW_png_OFFICIAL_complete {
-            get {
-                object obj = ResourceManager.GetObject("MSSL_USA_Logo_Long_Form NEW png OFFICIAL complete", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
