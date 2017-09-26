@@ -117,8 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MSSL_USA_Logo_Long_Form NEW png OFFICIAL complete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MSSL_USA_Logo_Long_Form NEW png OFFICIAL complete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
