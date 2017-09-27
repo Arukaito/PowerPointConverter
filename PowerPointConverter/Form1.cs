@@ -3,7 +3,7 @@
 //   Copyright Alkaworks
 // </copyright>
 // <summary>
-//   Defines the Form1 type.
+//  A program that batch converts all the Microsoft Power Point (PPTX) into Images
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 namespace PowerPointConverter
@@ -14,14 +14,15 @@ namespace PowerPointConverter
     using System.Windows.Forms;
     using Microsoft.Office.Core;
     using pptApplication = Microsoft.Office.Interop.PowerPoint;
-    
+
     /// <summary>
-    /// The form 1.
+    /// The main class of my Form1
     /// </summary>
     public partial class Form1 : Form
     {
         /// <summary>
-        /// The file list.
+        /// Static Lists
+        /// TODO Change this to use another method instead of an static list
         /// </summary>
         private static readonly List<string> FileList = new List<string>();
         
@@ -34,7 +35,7 @@ namespace PowerPointConverter
         }
 
         /// <summary>
-        /// The form 1_ load.
+        /// The main load of my form. with contains only configuration properties.
         /// </summary>
         /// <param name="sender">
         /// The sender.
@@ -48,7 +49,8 @@ namespace PowerPointConverter
         }
 
         /// <summary>
-        /// The button click.
+        /// This button selects the Folderpath of the files to Import 
+        /// Then stores the FullName in my List 
         /// </summary>
         /// <param name="sender">
         /// The sender.
@@ -86,7 +88,8 @@ namespace PowerPointConverter
         }
 
         /// <summary>
-        /// The button to start converting the files.
+        /// This button batch converts the Selected Files in The Directory 
+        /// Into JPG Files
         /// </summary>
         /// <param name="sender">
         /// The sender.
@@ -135,8 +138,6 @@ namespace PowerPointConverter
             catch (Exception exception)
             {
                 MessageBox.Show(exception.ToString());
-
-               // throw;
             }
 
             pptp.Quit();
@@ -164,7 +165,7 @@ namespace PowerPointConverter
         }
 
         /// <summary>
-        /// The Public Variables.
+        /// Public Variables
         /// </summary>
         public class VariablesGlobales
         {
