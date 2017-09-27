@@ -49,7 +49,7 @@ namespace PowerPointConverter
         }
 
         /// <summary>
-        /// This button selects the Folderpath of the files to Import 
+        /// This button selects the Folder path of the files to Import 
         /// Then stores the FullName in my List 
         /// </summary>
         /// <param name="sender">
