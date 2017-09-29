@@ -1,2 +1,4 @@
 language: csharp
 solution: PowerPointConverter.sln
+install:
+  - nuget restore solution-name.sln
