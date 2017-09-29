@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ButtonExit = new System.Windows.Forms.Button();
             this.Button_Convertir = new System.Windows.Forms.Button();
             this.Button_Seleccion = new System.Windows.Forms.Button();
-            this.ButtonExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +45,16 @@
             this.groupBox1.Size = new System.Drawing.Size(270, 111);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // ButtonExit
+            // 
+            this.ButtonExit.Location = new System.Drawing.Point(10, 77);
+            this.ButtonExit.Name = "ButtonExit";
+            this.ButtonExit.Size = new System.Drawing.Size(251, 23);
+            this.ButtonExit.TabIndex = 2;
+            this.ButtonExit.Text = "Salir";
+            this.ButtonExit.UseVisualStyleBackColor = true;
+            this.ButtonExit.Click += new System.EventHandler(this.ButtonExitClick);
             // 
             // Button_Convertir
             // 
@@ -67,16 +76,6 @@
             this.Button_Seleccion.UseVisualStyleBackColor = true;
             this.Button_Seleccion.Click += new System.EventHandler(this.ButtonSeleccionClick);
             // 
-            // ButtonExit
-            // 
-            this.ButtonExit.Location = new System.Drawing.Point(10, 77);
-            this.ButtonExit.Name = "ButtonExit";
-            this.ButtonExit.Size = new System.Drawing.Size(251, 23);
-            this.ButtonExit.TabIndex = 2;
-            this.ButtonExit.Text = "Salir";
-            this.ButtonExit.UseVisualStyleBackColor = true;
-            this.ButtonExit.Click += new System.EventHandler(this.ButtonExitClick);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -84,10 +83,10 @@
             this.ClientSize = new System.Drawing.Size(275, 115);
             this.Controls.Add(this.groupBox1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Power Point Converter";
             this.Load += new System.EventHandler(this.Form1Load);
